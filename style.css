@@ -1,0 +1,297 @@
+
+* {
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  font-size: calc(13px + (22 - 16) * (100vw - 320px) / 1200);
+  word-wrap: break-word;
+  font-family: Inter;
+  font-family: Josefin Sans;
+  height: 100%;
+}
+
+li {
+  list-style-type: var(--none);
+}
+
+.navbar {
+  display: flex;
+  font-family: Inter;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+.menu {
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  align-items: center;
+  list-style-type: none;
+  padding: 0;
+  gap: 17px;
+}
+
+.menu_ {
+  display: flex;
+  width: 100rem;
+  align-items: center;
+  flex-direction: row;
+  justify-content: center;
+  padding: 0%;
+  gap: 17px;
+}
+
+/*responsive*/
+#titlee {
+  display: flex;
+  letter-spacing: 6.99px;
+  text-align: center;
+  font-size: 3.125rem;
+}
+
+@media (max-width: 640px) {
+  #titlee {
+    font-size: 3rem;
+  }
+
+  .menu {
+    font-size: 0.8rem;
+  }
+}
+@media (max-width: 499px) {
+  #titlee {
+    font-size: 3rem;
+  }
+
+  .menu {
+    font-size: 0.9rem;
+  }
+}
+
+.content {
+  width: 100%;
+}
+.img_container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.second {
+  width: 100%;
+  height: auto;
+}
+.first_row {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+
+.img_1 {
+  object-fit: cover;
+  overflow: hidden;
+
+  width: 100%;
+  height: 35rem;
+}
+
+.img_3 {
+  position: relative;
+  width: 100%;
+  height: auto;
+}
+.img_4 {
+  position: relative;
+}
+.img_ {
+  object-fit: cover;
+  overflow: hidden;
+
+  width: 100%;
+  height: 35rem;
+}
+.para {
+  font-family: Josefin Sans;
+  width: 100%;
+  padding: 1.5rem;
+  flex-wrap: wrap;
+  font-weight: 360;
+  font-size: 1.5rem;
+}
+h1{
+  font-weight: 500;
+}
+ button {
+  font-family: Outfit;
+  background-color: transparent;
+  border: 1px solid #000;
+  border-radius: 9px;
+  color: #000;
+  padding: 10px 30px;
+  font-size: 16px;
+  transition: background-color 90ms;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: rgb(255, 241, 246);
+}
+
+.about_me_btn {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+}
+
+.tutorial_btn {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+}
+.footer_container {
+  padding-top: 1rem;
+  width: 100%;
+}
+
+.second {
+  width: 100%;
+  display: grid;
+
+  gap: 2rem;
+  grid-template-rows: 1fr 1fr;
+}
+
+.info {
+  display: flex;
+  font-size: 1.2rem;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.icons {
+  display: flex;
+  gap: 10px;
+}
+
+/*responsive*/
+
+@media (min-width: 568px) {
+  .first_row {
+    display: flex;
+    flex-direction: row;
+  }
+  .img_1 {
+    width: 50%;
+  }
+  .para {
+    padding: 0;
+    padding-left: 1rem;
+    width: 50%;
+  }
+  .second {
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: row;
+    
+    width: 100%;
+  }
+  
+  .img_ {
+    width: 100%;
+  }
+
+  .img_3 {
+    width: 50%;
+  }
+  .img_4 {
+    width: 50%;
+  }
+  
+  .footer_container {
+    width: 100%;
+    text-align: center;
+  }
+  footer p {
+    font-size: 0.9rem;
+    text-align: left;
+  }
+  button {
+    font-size: 0.9rem;
+    padding: 15px 40px;
+  }
+  @media (min-width: 1182px) {
+    
+    .img_container {
+      display: flex;
+      flex-direction: row;
+      padding: 2rem;
+    }
+    .first_row {
+      width: 100%;
+      height: 100%;
+    }
+    .img_1 {
+      width: 43%;
+      height: 34rem;
+    }
+
+    .para {
+      width: 50%;
+      padding-top: 2rem;
+      margin-left: 2rem;
+      font-size: 0.5rem;
+    }
+    h1 {
+      text-align: left;
+      width: 80%;
+      font-size: 3.9rem;
+    }
+   .para {
+      font-size: 1.3rem;
+    }
+    .second {
+      width: fit-content;
+      height: 50%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .img_ {
+      margin-left: 1rem;
+      width: 17rem;
+      height: 17rem;
+    }
+    .img_3 {
+      width: fit-content;
+    }
+    .img_4{
+      width: 100%;
+    }
+    .footer_container {
+      margin-top: 2rem;
+    }
+    footer p {
+      font-size: 0.9rem;
+      text-align: left;
+    }
+
+    button {
+      font-size: 0.7rem;
+      padding: 15px 40px;
+    }
+  }
+}
